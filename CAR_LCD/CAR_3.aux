@@ -1,0 +1,420 @@
+==============================================================
+==============================================================
+4DGL Compiler 2.6.0.5 -- Copyright 2004-2010 4D Labs
+** D:\Dropbox\My Projects\CAN BUS & TELEMETRY\Display\CODE\CAR_LCD\CAR_3.4DG compiled Sat Oct 20 02:55:18 2012
+==============================================================
+==============================================================
+
+
+No Ref for file
+[LINKING]
+function 11, main, address 3090
+(main entry point)
+stack usage 0 + 4
+function 'main' requires no arguments
+function 'main' has no return value
+
+[LINKING]
+function 10, Read_Data, address 3272
+stack usage 4 + 4
+function 'Read_Data' requires no arguments
+function 'Read_Data' has no return value
+
+[LINKING]
+function 9, Connection, address 3452
+stack usage 0 + 4
+function 'Connection' requires no arguments
+function 'Connection' has no return value
+
+[LINKING]
+function 8, Serial_Init, address 3497
+stack usage 2 + 4
+function 'Serial_Init' requires no arguments
+function 'Serial_Init' has no return value
+
+[LINKING]
+function 7, FM_LOGO, address 3563
+stack usage 4 + 4
+function 'FM_LOGO' requires no arguments
+function 'FM_LOGO' has no return value
+
+[LINKING]
+function 6, NoConnection_Disp, address 3911
+stack usage 0 + 4
+function 'NoConnection_Disp' requires no arguments
+function 'NoConnection_Disp' has no return value
+
+[LINKING]
+function 5, Warnings_Disp, address 4073
+stack usage 0 + 4
+function 'Warnings_Disp' requires no arguments
+function 'Warnings_Disp' has no return value
+
+[LINKING]
+function 4, Pneumatic_Disp, address 4514
+stack usage 0 + 4
+function 'Pneumatic_Disp' requires no arguments
+function 'Pneumatic_Disp' has no return value
+
+[LINKING]
+function 3, Gear_Disp, address 4763
+stack usage 0 + 4
+function 'Gear_Disp' requires 1 argument
+function 'Gear_Disp' has no return value
+
+[LINKING]
+function 2, Speed_Disp, address 4893
+stack usage 0 + 4
+function 'Speed_Disp' requires 1 argument
+function 'Speed_Disp' has no return value
+
+[LINKING]
+function 1, RPM_Meter, address 5043
+stack usage 12 + 4
+function 'RPM_Meter' requires 1 argument
+function 'RPM_Meter' has no return value
+
+
+[MACRO]
+
+[CONSTANTS]
+__MAXMEM                          00003840      14400  (usage 1)
+__MAXPROG                         00003840      14400  (usage 1)
+ALL                               0000FFFF      65535  (usage 1)
+BAUD_RATE                         00000F00       3840  (usage 1)
+BLACK                             00000000          0  (usage 5)
+BLUE                              0000001F         31  (usage 1)
+BUFFER_SIZE                       00000007          7  (usage 5)
+COM1                              0000F808      63496  (usage 1)
+CON_FLASH_OFF                     00000003          3  (usage 4)
+CON_FLASH_ON                      00000002          2  (usage 2)
+CONNECTED                         00000000          0  (usage 2)
+CYAN                              000007FF       2047  (usage 1)
+DISCONNECTED                      00000001          1  (usage 2)
+FONT1                             00000000          0  (usage 2)
+FONT2                             00000001          1  (usage 2)
+FONT_SIZE                         00000002          2  (usage 1)
+LANDSCAPE                         00000000          0  (usage 1)
+LIME                              000007E0       2016  (usage 2)
+NEUTRAL_X                         0000003C         60  (usage 1)
+NEUTRAL_Y                         00000064        100  (usage 1)
+OIL_WARNING_FLASH_OFF             00000007          7  (usage 3)
+OIL_WARNING_FLASH_ON              00000006          6  (usage 2)
+OIL_WARNING_OFF                   00000005          5  (usage 3)
+OIL_WARNING_ON                    00000004          4  (usage 3)
+PICASO                            00000001          1  (usage 1)
+PNEUM_FLASH_OFF                   0000000F         15  (usage 3)
+PNEUM_FLASH_ON                    0000000E         14  (usage 2)
+PNEUM_OFF                         0000000D         13  (usage 4)
+PNEUM_ON                          0000000C         12  (usage 2)
+RED                               0000F800      63488  (usage 6)
+RPM_COL_RANGE1                    000007E0       2016  (usage 2)
+RPM_COL_RANGE2                    0000FFE0      65504  (usage 2)
+RPM_COL_RANGE3                    0000F800      63488  (usage 2)
+RPM_RANGE1                        000007D0       2000  (usage 4)
+RPM_RANGE2                        00001194       4500  (usage 2)
+RPM_X                             00000064        100  (usage 2)
+RPM_Y                             00000064        100  (usage 2)
+SERIAL_QFY                        0000003A         58  (usage 2)
+SKYBLUE                           0000867D      34429  (usage 1)
+SOLID                             00000000          0  (usage 1)
+SPEED_X                           0000000A         10  (usage 2)
+SPEED_Y                           000000CD        205  (usage 2)
+TEMP_WARNING_FLASH_OFF            0000000B         11  (usage 3)
+TEMP_WARNING_FLASH_ON             0000000A         10  (usage 2)
+TEMP_WARNING_OFF                  00000009          9  (usage 3)
+TEMP_WARNING_ON                   00000008          8  (usage 3)
+TIMER0                            00000000          0  (usage 4)
+TIMER1                            00000001          1  (usage 4)
+TIMER3                            00000003          3  (usage 4)
+TIMER4                            00000004          4  (usage 2)
+TIMER5                            00000005          5  (usage 4)
+WHITE                             0000FFFF      65535  (usage 3)
+YELLOW                            0000FFE0      65504  (usage 2)
+
+[PmmC FUNCTIONS]
+com1_Full                         FFFFFF7B        -133  args=0 r=1  (usage 1)
+com1_Init                         FFFFFF7E        -130  args=3 r=0  (usage 2)
+com1_Sync                         FFFFFF79        -135  args=0 r=1  (usage 1)
+com_SetBaud                       FFFFFF72        -142  args=2 r=1  (usage 1)
+file_LoadImageControl             FFFFFF04        -252  args=3 r=1  (usage 1)
+file_Mount                        FFFFFF03        -253  args=0 r=1  (usage 3)
+gfx_Cls                           FFFFFFCD         -51  args=0 r=0  (usage 6)
+gfx_Line                          FFFFFFC8         -56  args=5 r=0  (usage 4)
+gfx_MoveTo                        FFFFFFCC         -52  args=2 r=0  (usage 16)
+gfx_Orbit                         FFFFFFBD         -67  args=2 r=0  (usage 2)
+gfx_OrbitInit                     FFFFFFBE         -66  args=2 r=0  (usage 1)
+gfx_PenSize                       FFFFFFA5         -91  args=1 r=1  (usage 1)
+gfx_ScreenMode                    FFFFFF9E         -98  args=1 r=1  (usage 1)
+gfx_Vline                         FFFFFFC6         -58  args=4 r=1  (usage 8)
+img_Show                          FFFFFF47        -185  args=2 r=1  (usage 1)
+pause                             FFFFFFFA          -6  args=1 r=0  (usage 2)
+putstr                            FFFFFFF7          -9  args=1 r=1  (usage 3)
+serin1                            FFFFFF74        -140  args=0 r=1  (usage 1)
+sys_GetTimer                      FFFFFF40        -192  args=1 r=1  (usage 9)
+sys_SetTimer                      FFFFFF41        -191  args=2 r=0  (usage 9)
+txt_Bold                          FFFFFFDE         -34  args=1 r=1  (usage 9)
+txt_FGcolour                      FFFFFFE7         -25  args=1 r=1  (usage 12)
+txt_FontID                        FFFFFFE5         -27  args=1 r=1  (usage 9)
+txt_Height                        FFFFFFE3         -29  args=1 r=1  (usage 9)
+txt_Set                           FFFFFFE8         -24  args=2 r=0  (usage 1)
+txt_Width                         FFFFFFE4         -28  args=1 r=1  (usage 9)
+
+[USER FUNCTIONS]
+Connection                        00000D7C  args=0 r=0  (usage 1)
+FM_LOGO                           00000DEB  args=0 r=0  (usage 1)
+Gear_Disp                         0000129B  args=1 r=0  (usage 1)
+NoConnection_Disp                 00000F47  args=0 r=0  (usage 1)
+Pneumatic_Disp                    000011A2  args=0 r=0  (usage 1)
+Read_Data                         00000CC8  args=0 r=0  (usage 1)
+RPM_Meter                         000013B3  args=1 r=0  (usage 1)
+Serial_Init                       00000DA9  args=0 r=0  (usage 1)
+Speed_Disp                        0000131D  args=1 r=0  (usage 1)
+Warnings_Disp                     00000FE9  args=0 r=0  (usage 1)
+
+[GLOBAL VARIABLES]
+Buffer                            00000005  word[7]   (usage 2)
+ConnectionFlashState              0000002B  word       (usage 6)
+ConnectionState                   00000029  word       (usage 4)
+D                                 00000003  word       (usage 3)
+GearPosition                      00000025  word       (usage 5)
+Ihndl                             00000027  word       (usage 2)
+Kmph                              00000023  word       (usage 3)
+OilFlashState                     0000002F  word       (usage 5)
+OilWarningState                   0000002D  word       (usage 6)
+PneumFlashState                   00000037  word       (usage 5)
+PneumState                        00000035  word       (usage 6)
+ReadBuffer                        00000013  word[7]   (usage 11)
+Rpm                               00000021  word       (usage 3)
+TempFlashState                    00000033  word       (usage 5)
+TempWarningState                  00000031  word       (usage 6)
+
+[PRIVATE VARIABLES]
+RPM_Meter.gear_pos                word      (member of RPM_Meter)  (usage 2)
+
+[DATA]
+0007: 00 00 00 00 06 0F 0F 0F 06 00 06 00 00 19 19 00     .................
+0017: 00 00 00 00 00 06 3F 0C 19 33 33 00 06 1F 36 3F     ......?..33...6?.
+0027: 06 3F 06 00 00 00 38 01 07 1C 70 00 00 0D 19 0E     .?....8...p.....>
+0037: 3E 33 3B 00 0E 0E 06 00 00 00 00 00 03 0E 1C 1C     >3;..............
+0047: 1C 0C 06 00 1C 07 03 03 03 03 06 00 00 00 36 0F     ..............6..
+0057: 0F 36 00 00 00 00 06 06 3F 06 00 00 00 00 00 00     .6......?........
+0067: 00 00 0E 06 00 00 00 00 3F 00 00 00 00 00 00 00     ........?........
+0077: 00 00 0E 00 00 00 00 03 0E 38 60 00 0F 30 60 63     .........8`..0`cl
+0087: 6C 70 3F 00 03 1F 03 03 03 03 1F 00 1F 70 60 01     lp?..........p`..
+0097: 07 1C 7F 00 1F 70 00 0F 00 60 3F 00 01 07 1C 70     ....p...`?....p
+00A7: 7F 00 00 00 7F 60 60 3F 00 60 3F 00 03 0E 38 7F     ...``?.`?...8p
+00B7: 70 60 3F 00 7F 00 00 01 03 06 0C 00 0F 38 30 1F     p`?.........80.p
+00C7: 70 60 3F 00 1F 70 60 3F 00 01 1F 00 00 00 0E 0E     p`?..p`?.........
+00D7: 00 0E 0E 00 00 00 0E 0E 00 0E 0E 06 00 03 0E 38     ...............8.
+00E7: 1C 07 01 00 00 00 00 3F 00 3F 00 00 30 1C 07 01     .......?.?..0....
+00F7: 03 0E 38 00 1F 70 60 03 06 06 06 00 1F 30 6F 6D     ..8..p`......0omm
+0107: 6D 67 3F 00 06 0F 0F 19 30 3F 60 00 7F 61 60 7F     mg?.....0?`.a``
+0117: 60 60 7F 00 0F 38 60 60 60 30 1F 00 7F 61 60 60     ``..8```0..a```
+0127: 60 60 7F 00 7F 60 60 7F 60 60 7F 00 7F 60 60 7F     ``.````.```
+0137: 60 60 60 00 0F 38 60 63 60 30 1F 00 60 60 60 7F     ```..8`c`0..````
+0147: 60 60 60 00 1F 06 06 06 06 06 1F 00 00 00 00 00     ```..............
+0157: 00 60 3F 00 60 61 67 7C 6E 63 60 00 60 60 60 60     .`?.`ag|nc`.`````
+0167: 60 60 7F 00 60 70 79 6F 66 60 60 00 60 70 6C 66     ``.`pyof``.`plfc
+0177: 63 61 60 00 0F 39 60 60 60 30 1F 00 7F 60 60 60     ca`..9```0..```
+0187: 7F 60 60 00 0F 39 60 60 60 33 1F 00 7F 60 60 60     ``..9```3..```
+0197: 7F 63 60 00 1F 70 60 3F 00 60 3F 00 3F 06 06 06     c`..p`?.`?.?....
+01A7: 06 06 06 00 60 60 60 60 60 60 3F 00 60 60 30 19     ....``````?.``0..
+01B7: 19 0F 06 00 60 60 60 60 66 79 70 00 60 30 19 06     ....````fyp.`0...
+01C7: 0F 30 60 00 60 30 19 0F 06 06 06 00 7F 00 01 06     .0`.`0..........
+01D7: 0C 30 7F 00 1F 18 18 18 18 18 1F 00 00 60 38 0E     .0..........`8..
+01E7: 03 00 00 00 1F 01 01 01 01 01 1F 00 02 0F 38 60     ..............8`.
+01F7: 00 00 00 00 00 00 00 00 00 00 00 7F 00 07 06 03     ................
+0207: 00 00 00 00 00 00 00 3F 1F 60 7F 00 60 60 60 7F     .......?.`.````
+0217: 60 60 7F 00 00 00 00 3F 60 60 3F 00 00 00 00 3F     ``....?``?....?`
+0227: 60 60 3F 00 00 00 00 3F 7F 60 3F 00 07 1C 18 7F     ``?....?`?.....
+0237: 18 18 18 00 00 00 00 3F 60 3F 00 3F 60 60 60 7F     .......?`?.?````
+0247: 60 60 60 00 00 06 00 0E 06 06 1F 00 00 01 00 03     ```..............
+0257: 01 01 01 1F 30 30 30 33 3E 37 31 00 0E 06 06 06     ....0003>71......
+0267: 06 06 1F 00 00 00 00 7F 66 66 66 00 00 00 00 3F     .......fff....?0
+0277: 30 30 30 00 00 00 00 3F 60 60 3F 00 00 00 00 7F     000....?``?....`
+0287: 60 70 6F 60 00 00 00 3F 60 70 1F 00 00 00 00 3F     `po`...?`p.....?0
+0297: 30 30 30 00 00 00 00 7F 7F 01 7F 00 00 18 18 7F     000..........
+02A7: 18 18 1F 00 00 00 00 60 60 60 3F 00 00 00 00 60     .......```?....`0
+02B7: 30 19 0F 00 00 00 00 66 66 6F 39 00 00 00 00 71     0......ffo9....q.
+02C7: 1F 1F 71 00 00 00 00 30 19 0F 06 0C 00 00 00 7F     ..q....0........
+02D7: 06 18 7F 00 03 0E 0C 1C 1C 0C 0E 03 06 06 06 06     ................
+02E7: 06 06 06 00 3C 07 03 03 03 03 07 3C 00 1C 63 00     ....<......<..c..
+02F7: 00 00 00 00 00 00 06 19 60 7F 00 00 B4 01 54 B4     ........`..´.T´.
+0307: 01 54 B4 01 54 B4 01 54 B4 01 54 B4 01 54 68 00     .T´.T´.T´.T´.Th.h
+0317: 68 00 0D 68 00 0D 54 0C 24 15 19 16 03 0C 24 B3     h..h..T.$.....$³$
+0327: 24 1D 24 9B 24 E9 16 24 C4 0F D8 68 00 74 01 54     $.$›$é.$Ä.Øh.t.Tú
+0337: FA 0C 16 B4 0C 24 D8 D6 C4 13 01 C4 B4 01 54 23     ú..´.$ØÖÄ..Ä´.T#T
+0347: 54 D8 0E E8 1B 16 FF 0D 08 50 54 50 54 C4 06 B4     TØ.è..ÿ..PTPTÄ.´.
+0357: 01 0D 00 0D 05 7E 54 24 68 00 68 04 24 15 16 54     .....~T$h.h.$..TT
+0367: 54 A8 54 0A 72 F8 24 84 0D FF 6F 73 74 41 24 68     T¨T.rø$„.ÿostA$h.
+0377: 00 FF 07 03 00 16 54 24 F7 4D 74 00 B4 FF 11 B4     .ÿ....T$÷Mt.´ÿ.´ÿ
+0387: FF 11 0E 54 35 14 0E 24 02 24 59 FF 6F 65 01 0E     ÿ..T5..$.$Yÿoe..4
+0397: 34 75 6E 41 44 16 58 01 FF B4 FF 6D 74 66 63 01     4unAD.X.ÿ´ÿmtfc..
+03A7: 16 C4 FF 74 01 58 E8 C1 14 0E 02 06 68 01 DC 24     .Äÿt.XèÁ....h.Ü$Æ
+03B7: C6 01 54 58 04 0E 74 01 58 E8 0D 14 0E 02 06 68     Æ.TX..t.Xè.....h.
+03C7: 01 DC 04 FF 84 14 00 68 07 D8 FA E5 80 68 00 16     .Ü.ÿ„..h.Øúå€h..T
+03D7: 54 16 54 16 54 16 02 85 40 24 06 68 00 54 68 05     T.T.T..…@$.h.Th.$
+03E7: 24 16 19 16 54 54 E8 FF 6E 02 34 53 4E 45 01 16     $...TTèÿn.4SNE...
+03F7: 16 54 01 0A 58 01 FF 24 DE 24 E4 24 E3 24 17 19     .T..X.ÿ$Þ$ä$ã$...
+0407: 16 07 31 40 24 06 68 BE 02 F7 4F 24 B4 01 FF 64     ..1@$.h¾.÷O$´.ÿdÄ
+0417: C4 06 10 54 E8 68 00 00 10 54 24 68 04 00 02 07     Ä..Tèh...T$h....A
+0427: 41 54 16 05 10 54 24 68 04 00 02 58 01 FF 24 DE     AT...T$h...X.ÿ$Þ$
+0437: 24 E4 24 E3 24 19 19 16 0B 0D 40 24 06 68 64 02     $ä$ã$.....@$.hd.÷
+0447: F7 48 24 B4 01 FF 64 C4 06 11 54 E8 68 01 00 11     ÷H$´.ÿdÄ..Tèh...T
+0457: 54 24 68 04 00 02 0B 41 54 16 09 11 54 24 68 04     T$h....AT...T$h..
+0467: 00 02 FF 01 FF 24 DE 24 E4 24 E3 24 1B 19 16 0F     ..ÿ.ÿ$Þ$ä$ã$....é
+0477: E9 40 24 06 68 BE 02 F7 50 4D 46 16 54 68 03 24     é@$.h¾.÷PMF.Th.$.
+0487: 1B 19 16 0E 39 40 24 06 68 BE 02 F7 20 20 20 16     ....9@$.h¾.÷   .T
+0497: 54 68 03 24 1B E8 CC 54 16 58 01 F7 50 4D 20 16     Th.$.èÌT.X.÷PM .Ì
+04A7: CC 54 16 58 01 FF 01 FF 01 FF 01 54 E8 A4 18 68     ÌT.X.ÿ.ÿ.ÿ.Tè¤.hÿ
+04B7: FF 16 00 12 FF 00 02 02 58 00 02 68 00 02 34 24     ÿ...ÿ...X..h..4$.
+04C7: 0A 54 24 E5 80 68 FF 16 54 16 54 16 54 16 FF A4     .T$å€hÿ.T.T.T.ÿ¤.
+04D7: 16 F7 20 16 FF 5A 54 02 FF 01 FF 24 DE 24 E4 24     .÷ .ÿZT.ÿ.ÿ$Þ$ä$ã
+04E7: E3 24 68 05 48 16 06 00 A5 24 BE 74 16 54 24 00     ã$h.H...¥$¾t.T$..
+04F7: 16 0E 9B 13 00 01 13 84 24 04 16 03 BD 54 54 24     ..›....„$...½TT$.
+0507: 01 E8 01 08 68 04 02 E0 16 84 07 51 01 18 68 04     .è..h..à.„.Q..h..
+0517: 02 E0 16 68 04 02 00 16 68 04 02 00 74 54 16 D8     .à.h....h...tT.Ø.
+0527: 00 16 40 31 14 00 01 14 00 15 D0 DC FF 00 E0 16     ..@1......ÐÜÿ.à.„
+0537: 84 07 ED 01 18 68 00 5A 24 11 FF 00 00 16 68 00     „.í..h.Z$.ÿ...h.Z
+0547: 5A 04 19 0C AD 14 54 24 E5 80 68 01 68 03 68 03     Z...­.T$å€h.h.h.Ä
+0557: C4 07 68 1F B4 01 15 58 01 F9 05 02 68 02 01 CC     Ä.h.´..X.ù..h..ÌT
+0567: 54 64 24 E5 24 E7 FF 68 00 68 01 68 02 02 34 4D     Td$å$çÿh.h.h..4M.
+0577: 16 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     .ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0587: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0597: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+05A7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+05B7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+05C7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+05D7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+05E7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+05F7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0607: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0617: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0627: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0637: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0647: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0657: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0667: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0677: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0687: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0697: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+06A7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+06B7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+06C7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+06D7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+06E7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+06F7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0707: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0717: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0727: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0737: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0747: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0757: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0767: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0777: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0787: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0797: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+07A7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+07B7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+07C7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+07D7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+07E7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+07F7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0807: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0817: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0827: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0837: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0847: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0857: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0867: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0877: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0887: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0897: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+08A7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+08B7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+08C7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+08D7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+08E7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+08F7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0907: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0917: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0927: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0937: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0947: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0957: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0967: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0977: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0987: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0997: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+09A7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+09B7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+09C7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+09D7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+09E7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+09F7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A07: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A17: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A27: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A37: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A47: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A57: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A67: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A77: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A87: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0A97: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0AA7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0AB7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0AC7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0AD7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0AE7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0AF7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B07: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B17: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B27: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B37: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B47: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B57: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B67: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B77: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B87: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0B97: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0BA7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0BB7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0BC7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0BD7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0BE7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0BF7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0C07: FF FF FF FF FF                                      ÿÿÿÿÿÿ
+
+[__MAXPROG]
+14400
+[__MAXMEM]
+14400
+
+[PROGRAM]
+main
+[CODESIZE]
+5599
+[MEMSIZE]
+28
+[ARGCOUNT]
+0
+[RETURNS]
+NO
+[STACKSIZE]
+500
+[STACK_ESTIMATE]
+66   (nb:- worst case estimate)
+[MODE]
+0
+
+[PROJECT]
+D:\Dropbox\My Projects\CAN BUS & TELEMETRY\Display\CODE\CAR_LCD\CAR_3.4DG
+C:\Program Files\4D Labs\4D Workshop 3 IDE\include\uLCD-32PT_GFX2.fnc
+C:\Program Files\4D Labs\4D Workshop 3 IDE\include\PicasoGFX2_Functions.fnc
+C:\Program Files\4D Labs\4D Workshop 3 IDE\include\4DGL_16bitColours.fnc
+C:\Program Files\4D Labs\4D Workshop 3 IDE\include\FONT4.fnt
+D:\Dropbox\My Projects\CAN BUS & TELEMETRY\Display\CODE\CAR_LCD\defines.inc
+D:\Dropbox\My Projects\CAN BUS & TELEMETRY\Display\CODE\CAR_LCD\display.fnc
+D:\Dropbox\My Projects\CAN BUS & TELEMETRY\Display\CODE\CAR_LCD\connect.fnc

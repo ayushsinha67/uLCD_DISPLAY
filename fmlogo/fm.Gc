@@ -1,0 +1,6 @@
+// Image - "fmlogo.jpg" Size 245x108
+// Width  = 245
+// Height = 108
+// Usage: fmlogo.jpg(x, y);
+#constant fmlogo.jpg    $media_SetSector(0x0000, 0x0000); media_Image
+

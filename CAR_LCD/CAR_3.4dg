@@ -1,0 +1,87 @@
+#platform "uLCD-32PT_GFX2"
+
+ /* INHERIT */
+#inherit "4DGL_16bitColours.fnc"
+#inherit "FONT4.fnt"
+#inherit "defines.inc"
+#inherit "display.fnc"
+#inherit "connect.fnc"
+
+/*
+ * CAR STEERING DISPLAY
+ *
+ * Author: Ayush Sinha
+ * 19/10/2012
+*/
+
+#STACK 500                                      /* Initialize stack memory */
+
+/************************************************************************
+ *    GLOBAL VARIABLES
+ */
+var D;                                          /* Disk */
+
+var Buffer[BUFFER_SIZE];                        /* Serial Rx Buffer */
+var ReadBuffer[BUFFER_SIZE];                    /* Read copy Buffer */
+
+var Rpm;                                        /* RPM variable */
+var Kmph;                                       /* KMPH variable */
+var GearPosition;                               /* Gear Position */
+
+var *Ihndl;                                     /* Handle for image control */
+
+var ConnectionState;                            /* Connection State */
+var ConnectionFlashState;
+var OilWarningState;                            /* Oil Warning */
+var OilFlashState;
+var TempWarningState;                           /* Temperature Warning */
+var TempFlashState;
+var PneumState;                                 /* PneumState */
+var PneumFlashState;
+
+/************************************************************************
+ *    MAIN
+ */
+func main()
+
+    ConnectionState := DISCONNECTED;            /* Initialize variables */
+    ConnectionFlashState := CON_FLASH_OFF;
+    OilWarningState := OIL_WARNING_OFF;
+    OilFlashState := OIL_WARNING_FLASH_OFF;
+    TempWarningState := TEMP_WARNING_OFF;
+    TempFlashState := TEMP_WARNING_FLASH_OFF;
+    PneumState := PNEUM_OFF;
+    PneumFlashState := PNEUM_FLASH_OFF;
+    Rpm := 0;
+    Kmph := 0;
+    GearPosition := 0;
+
+    gfx_ScreenMode( LANDSCAPE );                /* Change to Landscape Mode */
+    gfx_Cls();                                  /* Clear the Screen */
+
+    FM_LOGO();                                  /* Display starting logo */
+    gfx_Cls();
+
+    Serial_Init();                              /* Initialize Serial Port */
+
+    /* LOOP FOREVER */
+    while(1)
+
+        Connection();                           /* Check Connection */
+
+        if( ( ConnectionState == CONNECTED ) && ( ConnectionFlashState == CON_FLASH_OFF ) )
+
+            Read_Data();                        /* Read Data from Serial Port */
+            RPM_Meter( Rpm );
+            Speed_Disp( Kmph );
+            Gear_Disp( GearPosition );
+            Warnings_Disp();                     /* Show Warnings */
+            Pneumatic_Disp();                    /* Show Pneumatic State */
+
+        else
+            NoConnection_Disp();                /* Display Error in Connection */
+        endif
+    wend
+endfunc
+
+
